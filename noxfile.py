@@ -68,7 +68,7 @@ def ruff(session: nox.Session) -> None:
     """Run ruff.
     """
     session.install("ruff")
-    #session.install(".[dev]")
+    session.install(".[dev]")
     session.run("ruff", "check", *session.posargs)
 
 
@@ -77,7 +77,7 @@ def pylint(session: nox.Session) -> None:
     """Run pylint.
     """
     session.install("pylint")
-    #session.install(".[dev]")
+    session.install(".[dev]")
     session.run("pylint", *_LINT_DIRS, *session.posargs)
 
 
@@ -86,5 +86,5 @@ def test(session: nox.Session) -> None:
     """Run the unit tests.
     """
     session.install("pytest")
-    #session.install(".[dev]")
+    session.install(".[dev]")
     session.run("pytest", *session.posargs)
