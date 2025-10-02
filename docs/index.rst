@@ -1,5 +1,5 @@
 
-archetype documentation
+|project| documentation
 =======================
 
 

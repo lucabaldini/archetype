@@ -46,6 +46,8 @@ language = "en"
 
 # Options for markup.
 rst_prolog = f"""
+.. |project| replace:: {project}
+.. |version| replace:: {version}
 """
 
 # Options for source files.
